@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import pic from "../../public/pic.png";
+import pic from "../../public/logo.jpg";
 import { MdMenu } from "react-icons/md";
 import { ImCross } from "react-icons/im";
 import { Link } from "react-scroll";
@@ -35,7 +35,7 @@ const Navbar = () => {
           <div className="flex space-x-2">
             <img src={pic} className="h-12 w-12 rounded-full" alt="" />
             <h1 className="font-semibold text-xl cursor-pointer">
-              Madhu<span className="text-green-500 text-2xl">r</span>
+              Madhu<span className="text-green-500 text-2xl">r</span><span> Gautam</span>
               <p className="text-sm ">
                 <span className="text-blue-600">MERN</span> Developer
               </p>

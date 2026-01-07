@@ -17,7 +17,7 @@ const Contact = () => {
       message: data.message,
     };
     try {
-      await axios.post("http://localhost:8080/contact", userInfo);
+      await axios.post("https://getform.io/f/bwnvydna", userInfo);
       toast.success("Your message has been sent");
     } catch (error) {
       console.log(error);
@@ -49,8 +49,8 @@ const Contact = () => {
                 type="text"
                 placeholder="Enter Your Full Name"
                 {...register("name", { required: true })}
+                required
               />
-              {errors.name && <span>This field is required</span>}
             </div>
             <div className="flex flex-col mb-4">
               <label className="block text-gray-700" htmlFor="email">
@@ -63,8 +63,8 @@ const Contact = () => {
                 name="email"
                 type="email"
                 placeholder="Enter Your Email Address"
+                required
               />
-              {errors.email && <span>This field is required</span>}
             </div>
             <div className="flex flex-col mb-4">
               <label className="block text-gray-700" htmlFor="message">
@@ -76,12 +76,12 @@ const Contact = () => {
                 className="shadow appearance-none border rounded-lg py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-black"
                 name="message"
                 placeholder="Type your message here"
+                required
               />
-              {errors.message && <span>This field is required</span>}
             </div>
             <button
               type="submit"
-              className="bg-black text-white rounded-lg py-4 px-3 hover:bg-slate-700"
+              className="bg-black ml-10 text-white rounded-lg px-7 py-3 scale-90 hover:bg-slate-700"
             >
               Submit
             </button>
