@@ -19,7 +19,6 @@ const Footer = () => {
                     <p className='text-sm'>
                         &copy; 2024 Your Company .All rights reserved.
                     </p>
-                    <p className='text-sm'>Supportive Partner ISAN data system</p>
                 </div>
             </div>
 
