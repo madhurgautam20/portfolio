@@ -19,8 +19,8 @@ const Portfolio = () => {
     {
       id: 3,
       logo: project2,
-      name: "soon...",
-      sourceLink: "https://github.com/yourusername/node-project", // Add your specific link
+      name: "Movie Website UI",
+      sourceLink: "https://github.com/madhurgautam20/AMG.git", // Add your specific link
     },
     {
       id: 4,
